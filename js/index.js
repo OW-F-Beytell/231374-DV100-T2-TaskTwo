@@ -55,7 +55,12 @@ for (let i = 1; i <= 100; i++) {
 // Output the average to the console with the string -> "The Average is"
 
 let marks = [23, 45, 67, 55, 80, 90, 45, 60, 56, 30, 31];
-
+let average = 0;
+for (let i = 0; i < marks.length; i++) {
+    average += marks[i];
+}
+average /= marks.length;
+console.log(average);
 
  // Use the following data 
 let ageOne = 23;
@@ -67,13 +72,23 @@ let userTwo = "Jacob";
 // Write a Script that checks to see if userOne name is Josh AND that this user is Older than 18
 // If True, console log -> "User and Age Match"
 // If False, console log -> "User and Age Do Not Match"
-
+if (userOne === "Josh" && ageOne > 18) {
+    console.log("User and Age Match");
+}
+else {
+    console.log("User and Age Do Not Match");
+}
 
 
 // Write a Script that checks to see if userTwo name is Peter OR that this user is Younger than 18
 // If True, console log -> "User is Younger than 18 or is Peter"
 // If False, console log -> "User is Younger than 18 and is Not Peter"
-
+if (userTwo === "Peter" || ageTwo < 18) {
+    console.log("User is Younger than 18 or is Peter");
+}
+else {
+    console.log("User is Younger than 18 and is Not Peter");
+}
 
 
 
